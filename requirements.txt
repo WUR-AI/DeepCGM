@@ -1,0 +1,7 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+numpy==1.26.4
+pandas
+matplotlib
+scipy
+torch==2.2.2+cu121
+spyder
