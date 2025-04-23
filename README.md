@@ -116,4 +116,4 @@ This project is licensed under the **CC BY-NC 4.0 License** — for **non-commer
 
 See [LICENSE](./LICENSE.md) for full details.
 
-For commercial use, please contact: [your-email@example.com]
+For commercial use, please contact: hanjingye@whu.edu.cn
