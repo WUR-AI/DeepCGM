@@ -34,11 +34,11 @@ To install the dependencies, clone the repository and install the required packa
 **conda**
 
 ```bash
-git clone https://github.com/yourusername/DeepCGM.git
+git clone https://github.com/WUR-AI/DeepCGM.git
 cd DeepCGM
-conda create -n DeepCGM
+conda create -n DeepCGM python==3.10.16
 conda activate DeepCGM
-pip install -r .\requirements.txt
+pip install -r ./requirements.txt
 ```
 
 ## Repository Structure
