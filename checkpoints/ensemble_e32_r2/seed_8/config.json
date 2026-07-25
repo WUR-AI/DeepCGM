@@ -1,0 +1,65 @@
+{
+  "name": "deepcgm-generic-e32-r2-seed8",
+  "description": "DeepCGM-generic (Hyper-LoRA) pretrained on 45 wheat cultivars and finetuned on 17 held-out cultivars.",
+  "embedding_dim": 32,
+  "hypernetwork_hidden_dim": 32,
+  "lora_rank": 2,
+  "lora_alpha": 1.0,
+  "organ_size": [
+    8,
+    8
+  ],
+  "input_mask": true,
+  "num_cultivar_slots": 200,
+  "sequence_length": 365,
+  "input_features": [
+    "IRRAD",
+    "TMIN",
+    "TMAX",
+    "RAIN",
+    "irr",
+    "fer",
+    "DVS"
+  ],
+  "output_features": [
+    "DVS",
+    "LAI",
+    "TWLV",
+    "TWST",
+    "WSO",
+    "TAGP"
+  ],
+  "output_scale": [
+    2.3,
+    8,
+    20000,
+    20000,
+    20000,
+    20000
+  ],
+  "loss_weights": [
+    1,
+    1,
+    4,
+    2,
+    2,
+    1
+  ],
+  "seed": 8,
+  "selection": "configuration chosen by lowest mean finetuning loss over d_emb in {8,16,32} x r in {2,4,8}, 10 seeds each; released weights are the best of the 10 seeds of the winning configuration",
+  "finetuning_loss": 0.04792,
+  "test_loss": 0.10562,
+  "note": "one member of the 10-seed ensemble reported in the paper",
+  "reference_loss_counts": {
+    "fitting": {
+      "DVS": 1202,
+      "LAI": 223,
+      "TWLV": 219,
+      "TWST": 246,
+      "WSO": 294,
+      "TAGP": 562
+    },
+    "convergence": 28848,
+    "description": "valid-observation counts of the 224 plot-season finetuning batch used for the released weights (Table 3 of the paper, Finetuning column). Pass --reproduce-reference-batch to finetune.py to reuse them, which lets a single-cultivar run follow the same trajectory as the original multi-cultivar fine-tune."
+  }
+}

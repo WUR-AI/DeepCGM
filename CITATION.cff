@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "DeepCGM-generic: a pretrained deep learning crop model adaptable across wheat cultivars"
+message: "If you use this software or the released weights, please cite the paper below."
+type: software
+authors:
+  - family-names: Han
+    given-names: Jingye
+    email: jingye.han@wur.nl
+    affiliation: "Artificial Intelligence Group, Wageningen University and Research"
+  - family-names: Athanasiadis
+    given-names: Ioannis N.
+    affiliation: "Artificial Intelligence Group, Wageningen University and Research"
+license: CC-BY-NC-4.0
+repository-code: "https://github.com/WUR-AI/DeepCGM/tree/DeepCGM-generic"
+version: 1.0.0
+
+preferred-citation:
+  type: article
+  title: "Deep learning-based crop models for efficient adaptation across cultivars"
+  authors:
+    - family-names: Han
+      given-names: Jingye
+    - family-names: Athanasiadis
+      given-names: Ioannis N.
+  year: 2026
+  # TODO: fill in journal, volume, pages and DOI once the paper is published
+
+references:
+  - type: article
+    title: "Knowledge-guided machine learning with multivariate sparse data for crop growth modelling"
+    authors:
+      - family-names: Han
+        given-names: Jingye
+      - family-names: Shi
+        given-names: Liangsheng
+      - family-names: Yang
+        given-names: Qi
+      - family-names: Yu
+        given-names: Jin
+      - family-names: Athanasiadis
+        given-names: "Ioannis N."
+    journal: "Field Crops Research"
+    volume: 328
+    start: 109912
+    year: 2025
+    notes: "The DeepCGM backbone that DeepCGM-generic extends."
